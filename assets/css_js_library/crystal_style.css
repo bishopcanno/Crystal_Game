@@ -1,0 +1,22 @@
+/* body background */
+body{
+    background-color: rgb(87, 107, 112);
+}
+/* inserted the google font here */
+.container{
+    font-family: 'Gloria Hallelujah', cursive;
+}
+/* minerImg didnt line up quite correctly so I possitioned it here */
+#minerImg{
+    position: relative;
+    right: 35px;
+}
+/* pushed the start and reset buttons down to the center */
+#startButton{
+    position: relative;
+    top: 150px;
+}
+#resetButton{
+    position: relative;
+    top: 150px;
+}

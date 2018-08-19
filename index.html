@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EricB_Crystal_Game</title>
+<!-- links for bootstrap, css and google fonts here -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css_js_library/crystal_style.css">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    
+</head>
+<body>
+<!-- container div begins here and also displays the intro title -->
+    <div class="container">
+        <div class="bg-primary row">
+            <div class="col-sm-12">
+                <h1>Crystal Collector</h1>
+            </div>
+        </div>
+        <br/>
+<!-- displays the instructions, the start and reset buttons, and minerImg in this row -->
+        <div class="row bg-warning">
+            <div class="col-sm-4">
+                <h2>Directions</h2>
+                <ol class="font-weight-bold">
+                    <li>Each of the 4 crystals have a hidden value between 1-12</li>
+                    <li>You will be given a random number that you must try to add up to by pressing on the crystal buttons</li>
+                    <li>Each time you start a game all values will be reset and randomized</li>
+                    <li>The Reset Button will clear wins and losses and start the game over</li>
+                </ol>
+            </div>
+
+            <div class="col-sm-2">
+                <button class="bg-info" id="startButton">Start</button>
+            </div>
+            
+            <div class="col-sm-2">
+                <button class=" bg-info" id="resetButton">Reset</button>
+            </div>
+            
+            <div class="col-sm-4" id="minerImg">
+                <img src = "./assets/images/miner.jpg" height="400px" width="400px">
+            </div>
+        </div>
+        <br/>
+<!-- displays random number and the users wins and losses -->
+        <div class="row">
+            <div class="col-sm-4 bg-success">
+                <h1>Random Number:</h1>
+                <h1><span id="randoNumber">###</span></h1>
+            </div>
+            <div class="col-sm-2"></div>
+            <div class="col-sm-4 bg-primary">
+                <h3>Wins:<span id="winsSpan">0</span></h3>
+                <br/>
+                <h3>Losses:<span id="lossesSpan">0</span></h3>
+            </div>
+        </div>
+        <br/>
+<!-- row for the crystal buttons -->
+        <div class="row">
+            <div class="col-sm-6">
+                <button class="bg-danger" id="redCrystalButton">
+                    <img src="./assets/images/red_crystal.jpg" width="100px" height="100px">
+                </button>
+
+                <button class="bg-primary" id="blueCrystalButton">
+                    <img src="./assets/images/blue_crystal.jpg" width="100px" height="100px">
+                </button>
+                
+                <button class="bg-dark" id="purpleCrystalButton">
+                    <img src="./assets/images/purple_crystal.jpg" width="100px" height="100px">
+                </button>
+                
+                <button class="bg-success" id="torquoiseCrystalButton">
+                    <img src="./assets/images/turqoise_crystal.jpg" width="100px" height="100px">
+                </button>
+            </div>
+        </div>
+        <br/>
+<!-- displays the users total -->
+        <div class="row">
+            <div class="col-sm-6  bg-info">
+                <h2>Your Total So Far:</h2>
+                <h1><span id="totalSpan">0</span></h1>
+            </div>
+        </div>
+    </div>
+<!-- links for jquery and J.S. here -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./assets/css_js_library/crystal_script.js"></script>
+</body>
+</html>
