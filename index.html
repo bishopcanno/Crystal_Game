@@ -26,7 +26,7 @@
                 <h2>Directions</h2>
                 <ol class="font-weight-bold">
                     <li>Each of the 4 crystals have a hidden value between 1-12</li>
-                    <li>You will be given a random number that you must try to add up to by pressing on the crystal buttons</li>
+                    <li>By pressing the start button you will be given a random number that you must try to add up to by pressing on the crystal buttons</li>
                     <li>Each time you start a game all values will be reset and randomized</li>
                     <li>The Reset Button will clear wins and losses and start the game over</li>
                 </ol>
@@ -40,8 +40,8 @@
                 <button class=" bg-info" id="resetButton">Reset</button>
             </div>
             
-            <div class="col-sm-4" id="minerImg">
-                <img src = "./assets/images/miner.jpg" height="400px" width="400px">
+            <div class="col-sm-4" id="minerImgDiv">
+                <img id="minerImg" src = "./assets/images/miner.jpg">
             </div>
         </div>
         <br/>
@@ -63,19 +63,19 @@
         <div class="row">
             <div class="col-sm-6">
                 <button class="bg-danger" id="redCrystalButton">
-                    <img src="./assets/images/red_crystal.jpg" width="100px" height="100px">
+                    <img class="crystalsImgs" src="./assets/images/red_crystal.jpg">
                 </button>
 
                 <button class="bg-primary" id="blueCrystalButton">
-                    <img src="./assets/images/blue_crystal.jpg" width="100px" height="100px">
+                    <img class="crystalsImgs" src="./assets/images/blue_crystal.jpg">
                 </button>
                 
                 <button class="bg-dark" id="purpleCrystalButton">
-                    <img src="./assets/images/purple_crystal.jpg" width="100px" height="100px">
+                    <img class="crystalsImgs" src="./assets/images/purple_crystal.jpg">
                 </button>
                 
                 <button class="bg-success" id="torquoiseCrystalButton">
-                    <img src="./assets/images/turqoise_crystal.jpg" width="100px" height="100px">
+                    <img class="crystalsImgs" src="./assets/images/turqoise_crystal.jpg">
                 </button>
             </div>
         </div>

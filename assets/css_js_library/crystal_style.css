@@ -6,10 +6,20 @@ body{
 .container{
     font-family: 'Gloria Hallelujah', cursive;
 }
+/* sizing for the crystal images here */
+.crystalsImgs{
+    height: 100px;
+    width: 100px;
+}
 /* minerImg didnt line up quite correctly so I possitioned it here */
-#minerImg{
+#minerImgDiv{
     position: relative;
     right: 35px;
+}
+/* sizing for the miner image here */
+#minerImg{
+    height: 400px;
+     width: 400px;
 }
 /* pushed the start and reset buttons down to the center */
 #startButton{
