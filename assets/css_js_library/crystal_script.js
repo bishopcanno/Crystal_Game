@@ -1,4 +1,4 @@
-// all 4 of the crystal buttons use the same randomization, 1-12
+// all 4 of the crystal buttons use the same randomization, 1-12, tried to create a function down at the bottom but was unsuccessful
 var redCrystalNumber = Math.floor(Math.random() * 12 ) + 1;
 var blueCrystalNumber = Math.floor(Math.random() * 12 ) + 1;
 var purpleCrystalNumber = Math.floor(Math.random() * 12 ) + 1;
