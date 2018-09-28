@@ -15,6 +15,17 @@ var userTotalCounter = 0;
 // determines if the start button has been clicked, built in because the start button being pushed more than once the game would break 
 var startButtonClicked = false;
 
+// windowsizing funtion for certain mobile responsiveness
+var winWidth = $( window ).width();
+
+function windowsizing(width){
+    if(width <= 1020){
+        $("#minerImg").hide();
+    }
+}
+
+windowsizing(winWidth);
+
 //upon clicking the start button the game begins by setting the startButtonClicked var to true
 $("#startButton").click( function(){
     if(!startButtonClicked)

@@ -2,31 +2,51 @@
 body{
     background-color: rgb(87, 107, 112);
 }
+
 /* inserted the google font here */
 .container{
     font-family: 'Gloria Hallelujah', cursive;
 }
+
+/* positioning for the header of the app */
+#crystal-header{
+    position: relative;
+    bottom: 10px;
+}
+
 /* sizing for the crystal images here */
 .crystalsImgs{
     height: 100px;
     width: 100px;
+    position: relative;
+    top: 1px;
 }
+
 /* minerImg didnt line up quite correctly so I possitioned it here */
-#minerImgDiv{
-    position: relative;
-    right: 35px;
-}
-/* sizing for the miner image here */
 #minerImg{
-    height: 400px;
-     width: 400px;
-}
-/* pushed the start and reset buttons down to the center */
-#startButton{
     position: relative;
-    top: 150px;
+    left: 11px;
 }
-#resetButton{
-    position: relative;
-    top: 150px;
+
+/* media queries for mobile responsiveness */
+
+@media screen and (max-width: 600px) and (min-width: 300px){
+    h1{
+        font-size: 25px;
+    }
+    h2{
+        font-size: 21px;
+    }
+    h3{
+        font-size: 17px
+    }
+    li{
+        font-size: 13px
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1100){
+    #minerImg{
+        left: 7px;
+    }
 }
